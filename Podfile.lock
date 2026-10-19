@@ -1,0 +1,39 @@
+PODS:
+  - AppCenter (5.12.0):
+    - AppCenter/Analytics (= 5.12.0)
+    - AppCenter/Crashes (= 5.12.0)
+  - AppCenter/Analytics (5.12.0):
+    - AppCenter/Core
+  - AppCenter/Core (5.12.0)
+  - AppCenter/Crashes (5.12.0):
+    - AppCenter/Core
+  - AppViewShared (1.2.8)
+  - RxRelay (6.9.0):
+    - RxSwift (= 6.9.0)
+  - RxSwift (6.9.0)
+
+DEPENDENCIES:
+  - AppCenter
+  - AppViewShared (from `../AppViewServer/`)
+  - RxRelay (~> 6.8)
+  - RxSwift (~> 6.8)
+
+SPEC REPOS:
+  trunk:
+    - AppCenter
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  AppViewShared:
+    :path: "../AppViewServer/"
+
+SPEC CHECKSUMS:
+  AppCenter: 38e27eb52113bff74426db9f500726933c8d2fd7
+  AppViewShared: d9f14fb920577ac1a46061f24f0f2627bcc47c29
+  RxRelay: 6b0c930e5cef57d5fe2032571e5e65b78e3cbdb1
+  RxSwift: 31649ace6aceeb422e16ff71c60804f9c3281ed9
+
+PODFILE CHECKSUM: b825ae8a3d320fbc9400a1ea0d043615a6a59213
+
+COCOAPODS: 1.16.2

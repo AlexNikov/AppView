@@ -1,0 +1,23 @@
+sceneLayout=flat
+dimension=0
+rotation=(0.80,0.00)
+translation=(0.00,0.00)
+scale=0.24
+zInterspace=1.00
+nodes=13
+treeNodes=0
+flat=13
+oid=2 super=0 indent=0 zIdx=0 tex=none disp=1 flat=0 root=(0.00,0.00,402.00,874.00)
+oid=8 super=2 indent=1 zIdx=1 tex=none disp=1 flat=1 root=(0.00,0.00,402.00,874.00)
+oid=9 super=8 indent=2 zIdx=2 tex=none disp=1 flat=2 root=(0.00,0.00,402.00,874.00)
+oid=11 super=9 indent=3 zIdx=3 tex=none disp=1 flat=3 root=(0.00,0.00,402.00,874.00)
+oid=13 super=11 indent=4 zIdx=4 tex=none disp=1 flat=4 root=(0.00,0.00,402.00,874.00)
+oid=16 super=13 indent=5 zIdx=5 tex=none disp=1 flat=5 root=(0.00,0.00,188.67,24.00)
+oid=17 super=13 indent=5 zIdx=6 tex=none disp=1 flat=6 root=(20.00,20.00,100.00,100.00)
+oid=19 super=13 indent=5 zIdx=5 tex=none disp=1 flat=7 root=(20.00,200.00,100.00,100.00)
+oid=21 super=13 indent=5 zIdx=5 tex=none disp=1 flat=9 root=(20.00,400.00,100.00,100.00)
+oid=22 super=13 indent=5 zIdx=5 tex=none disp=1 flat=10 root=(20.00,600.00,100.00,100.00)
+oid=24 super=13 indent=5 zIdx=9 tex=none disp=1 flat=12 root=(140.00,20.00,40.00,40.00)
+oid=4026531848 super=19 indent=6 zIdx=7 tex=none disp=1 flat=8 wire=0 title="Fake_Cat_Subview" root=(100.00,100.00,200.00,300.00)
+oid=4026531851 super=22 indent=6 zIdx=8 tex=none disp=1 flat=11 wire=0 title="Fake_Horse_Subview" root=(0.00,0.00,300.00,500.00)
+hiddenPreviewTitles=HiddenBadgeView

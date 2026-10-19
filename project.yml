@@ -1,0 +1,187 @@
+name: AppView
+options:
+  bundleIdPrefix: hughkli
+  deploymentTarget:
+    macOS: "11.5"
+  developmentLanguage: en
+  knownRegions:
+    - en
+    - Base
+    - zh-Hans
+  createIntermediateGroups: true
+  groupSortPosition: top
+  generateEmptyDirectories: false
+  minimumXcodeGenVersion: 2.38.0
+
+configs:
+  Debug: debug
+  Release: release
+
+settings:
+  base:
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 7
+    MACOSX_DEPLOYMENT_TARGET: "11.5"
+    SDKROOT: macosx
+    DEVELOPMENT_TEAM: 9938T969H4
+    CODE_SIGN_IDENTITY: "-"
+    CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED: YES
+    CLANG_CXX_LANGUAGE_STANDARD: gnu++14
+    CLANG_ENABLE_MODULES: YES
+    CLANG_ENABLE_OBJC_ARC: YES
+    CLANG_ENABLE_OBJC_WEAK: YES
+    ENABLE_STRICT_OBJC_MSGSEND: YES
+    GCC_C_LANGUAGE_STANDARD: gnu11
+    GCC_NO_COMMON_BLOCKS: YES
+    MTL_FAST_MATH: YES
+  configs:
+    Debug:
+      GCC_OPTIMIZATION_LEVEL: 0
+      GCC_PREPROCESSOR_DEFINITIONS:
+        - DEBUG=1
+        - $(inherited)
+      ENABLE_TESTABILITY: YES
+      MTL_ENABLE_DEBUG_INFO: INCLUDE_SOURCE
+      ONLY_ACTIVE_ARCH: YES
+    Release:
+      ENABLE_NS_ASSERTIONS: NO
+      MTL_ENABLE_DEBUG_INFO: NO
+
+targets:
+  AppViewMacMCP:
+    type: framework
+    platform: macOS
+    deploymentTarget: "11.5"
+    sources:
+      - path: AppViewMacMCP
+    settings:
+      base:
+        PRODUCT_NAME: AppViewMacMCP
+        PRODUCT_BUNDLE_IDENTIFIER: hughkli.AppViewMacMCP
+        DEFINES_MODULE: YES
+        SWIFT_VERSION: "5.0"
+        MACOSX_DEPLOYMENT_TARGET: "11.5"
+        GENERATE_INFOPLIST_FILE: YES
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 1.0.1
+        SKIP_INSTALL: YES
+        SWIFT_OBJC_BRIDGING_HEADER: ""
+        CLANG_ENABLE_MODULES: YES
+        HEADER_SEARCH_PATHS:
+          - $(SRCROOT)/AppViewMacMCP
+      configs:
+        Debug:
+          SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+        Release:
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+
+  AppViewClient:
+    type: application
+    platform: macOS
+    deploymentTarget: "11.5"
+    sources:
+      - path: AppViewClient
+        excludes:
+          - AppView.entitlements
+          - AppViewClient_Info.plist
+    settings:
+      base:
+        PRODUCT_NAME: AppView
+        PRODUCT_BUNDLE_IDENTIFIER: hughkli.AppView
+        INFOPLIST_FILE: AppViewClient/AppViewClient_Info.plist
+        CODE_SIGN_ENTITLEMENTS: AppViewClient/AppView.entitlements
+        SWIFT_OBJC_BRIDGING_HEADER: ""
+        SWIFT_VERSION: "5.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        COMBINE_HIDPI_IMAGES: YES
+        DEFINES_MODULE: YES
+        ENABLE_HARDENED_RUNTIME: YES
+        GCC_PRECOMPILE_PREFIX_HEADER: NO
+        GCC_PREFIX_HEADER: ""
+        MARKETING_VERSION: 1.0.7
+        CURRENT_PROJECT_VERSION: 14
+        FRAMEWORK_SEARCH_PATHS:
+          - $(inherited)
+          - $(PROJECT_DIR)/AppViewClient
+        LD_RUNPATH_SEARCH_PATHS:
+          - $(inherited)
+          - "@executable_path/../Frameworks"
+        GCC_PREPROCESSOR_DEFINITIONS:
+          - $(inherited)
+          - SHOULD_COMPILE_APPVIEW_SERVER=1
+          - APPVIEW_SHARED_MODELS_SWIFT=1
+          - APPVIEW_CATEGORIES_SWIFT=1
+          - APPVIEW_PEERTALK_SWIFT=1
+          - APPVIEW_IVAR_TRACE_SWIFT=1
+          - APPVIEW_DASHBOARD_BLUEPRINT_SWIFT=1
+      configs:
+        Debug:
+          CODE_SIGN_STYLE: Manual
+          CODE_SIGN_IDENTITY: "-"
+          DEVELOPMENT_TEAM: 9938T969H4
+          PROVISIONING_PROFILE_SPECIFIER: ""
+          SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+        Release:
+          CODE_SIGN_STYLE: Automatic
+          CODE_SIGN_IDENTITY: Mac Developer
+          DEVELOPMENT_TEAM: 9938T969H4
+          PROVISIONING_PROFILE_SPECIFIER: ""
+    configFiles:
+      Debug: Pods/Target Support Files/Pods-AppViewClient/Pods-AppViewClient.debug.xcconfig
+      Release: Pods/Target Support Files/Pods-AppViewClient/Pods-AppViewClient.release.xcconfig
+    dependencies:
+      - target: AppViewMacMCP
+        embed: true
+      - sdk: Security.framework
+    scheme:
+      testTargets:
+        - AppViewClientUITests
+
+  AppViewClientUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    deploymentTarget: "11.5"
+    sources:
+      - path: AppViewClientUITests
+        excludes:
+          - Fixtures
+    resources:
+      - path: AppViewClientUITests/Fixtures
+        buildPhase: resources
+    dependencies:
+      - target: AppViewClient
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: hughkli.AppViewClientUITests
+        TEST_TARGET_NAME: AppViewClient
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "5.0"
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: "-"
+        DEVELOPMENT_TEAM: 9938T969H4
+      configs:
+        Debug:
+          SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+
+schemes:
+  AppViewClient:
+    build:
+      targets:
+        AppViewMacMCP: all
+        AppViewClient: all
+        AppViewClientUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: false
+      targets:
+        - name: AppViewClientUITests
+          parallelizable: false
+          randomExecutionOrder: false
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

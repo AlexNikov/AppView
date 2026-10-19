@@ -1,0 +1,5 @@
+uiMode=inspector
+hasInspectorShell=1
+hierarchyRows_min=8
+dashboardCards_min=5
+selectedTitle_nonempty=1

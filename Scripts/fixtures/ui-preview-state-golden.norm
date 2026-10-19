@@ -1,0 +1,17 @@
+dimension=1
+rotation=(0.6,0)
+translation=(0,0)
+scale=0.27
+zInterspace=1
+nodes=9
+treeNodes=9
+flat=9
+oid=2 super=0 scnParent=0 indent=0 zIdx=0 tex=none disp=1 op=1.000 pos=(2.0100,-4.3700,-0.0240)
+oid=8 super=2 scnParent=2 indent=1 zIdx=1 tex=none disp=1 op=1.000 pos=(0.0000,0.0000,0.7840)
+oid=9 super=8 scnParent=8 indent=2 zIdx=2 tex=none disp=1 op=1.000 pos=(0.0000,0.0000,1.5920)
+oid=11 super=9 scnParent=9 indent=3 zIdx=3 tex=none disp=1 op=1.000 pos=(0.0000,0.0000,2.4000)
+oid=13 super=11 scnParent=11 indent=4 zIdx=4 tex=none disp=1 op=1.000 pos=(0.0000,0.0000,3.2080)
+oid=16 super=13 scnParent=13 indent=5 zIdx=5 tex=group disp=1 op=1.000 pos=(0.0000,3.1267,4.0160)
+oid=18 super=13 scnParent=13 indent=5 zIdx=5 tex=none disp=1 op=1.000 pos=(0.0000,2.4933,4.0161)
+oid=22 super=18 scnParent=18 indent=6 zIdx=5 tex=none disp=0 op=0.000 pos=(0.0000,0.0000,4.8162)
+oid=24 super=13 scnParent=13 indent=5 zIdx=5 tex=group disp=1 op=1.000 pos=(0.0000,1.3233,4.0163)

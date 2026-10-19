@@ -1,0 +1,9 @@
+Pods
+Build/
+*.xcodeproj
+*.xcworkspace
+.DS_Store
+DerivedData/
+Gemfile
+.qwen/
+.cursor/

@@ -1,0 +1,64 @@
+AppViewVerify - customAttr: item=BirdView group=Animal Info attr=Gender type=29 value=Female
+AppViewVerify - customAttr: item=BirdView group=Animal Info attr=IsFriendly type=14 value=0
+AppViewVerify - customAttr: item=BirdView group=Animal Info attr=SkinColor type=27 value=<normalized>
+AppViewVerify - customAttr: item=BirdView group=Animal Info attr=SkinPoint type=17 value=NSPoint: {6, 7}
+AppViewVerify - customAttr: item=BirdView group=Animal Info attr=SkinRect type=20 value=NSRect: {{1, 2}, {3, 4}}
+AppViewVerify - customAttr: item=BirdView group=Animal Info attr=SkinShadow type=30 value=<normalized>
+AppViewVerify - customAttr: item=BirdView group=Animal Info attr=SkinSize type=19 value=NSSize: {4, 5}
+AppViewVerify - customAttr: item=BirdView group=Appearance attr=Brightness type=13 value=8.8
+AppViewVerify - customAttr: item=BirdView group=BirdInfo attr=Age type=13 value=4.53
+AppViewVerify - customAttr: item=BirdView group=BirdInfo attr=Nickname type=24 value=Jerry
+AppViewVerify - customAttr: item=BirdView group=Life Style attr=Hobby type=24 value=Bike
+AppViewVerify - customAttr: item=CustomCatView group=Appearance attr=Brightness type=13 value=8.8
+AppViewVerify - customAttr: item=CustomCatView group=CatInfo attr=Age type=13 value=8.0
+AppViewVerify - customAttr: item=CustomCatView group=Life Style attr=Hobby type=24 value=Bike
+AppViewVerify - customAttr: item=CustomHorseLayer group=HorseInfo attr=Age type=13 value=4.53
+AppViewVerify - customAttr: item=CustomHorseLayer group=Life Style attr=Hobby type=24 value=Bike
+AppViewVerify - customAttr: item=DogLayer group=Animal Info attr=DogInsets type=22 value=<normalized>
+AppViewVerify - customAttr: item=DogLayer group=Animal Info attr=DogPoint type=17 value=NSPoint: {7, 8}
+AppViewVerify - customAttr: item=DogLayer group=Animal Info attr=DogRect type=20 value=NSRect: {{1, 2}, {3, 4}}
+AppViewVerify - customAttr: item=DogLayer group=Animal Info attr=DogShadow type=30 value=<normalized>
+AppViewVerify - customAttr: item=DogLayer group=Animal Info attr=DogSize type=19 value=NSSize: {5, 6}
+AppViewVerify - customAttr: item=DogLayer group=Animal Info attr=IsFriendly type=14 value=1
+AppViewVerify - customAttr: item=DogLayer group=Animal Info attr=SkinColor type=27 value=<normalized>
+AppViewVerify - customAttr: item=DogLayer group=Animal Info attr=Type type=29 value=Corgi
+AppViewVerify - customAttr: item=DogLayer group=DogInfo attr=Age type=13 value=8.0
+AppViewVerify - customAttr: item=DogLayer group=DogInfo attr=Nickname type=24 value=Sushi
+AppViewVerify - customAttr: item=DogLayer group=Life Style attr=Hobby type=24 value=Bike
+AppViewVerify - customAttr: item=Fake Cat Subview group=CatInfo attr=Age type=13 value=8.0
+AppViewVerify - customAttr: item=Fake Cat Subview group=CatInfo attr=Nickname type=24 value=Tom
+AppViewVerify - customAttr: item=Fake Horse Subview group=Animal Info attr=Age type=13 value=3.2
+AppViewVerify - customAttr: item=Fake Horse Subview group=Animal Info attr=Name type=24 value=Mary
+AppViewVerify - customAttr: item=HiddenBadgeView group=Appearance attr=Brightness type=13 value=8.8
+AppViewVerify - customAttr: item=HiddenBadgeView group=Life Style attr=Hobby type=24 value=Bike
+AppViewVerify - customAttr: item=UIDropShadowView group=Appearance attr=Brightness type=13 value=8.8
+AppViewVerify - customAttr: item=UIDropShadowView group=Life Style attr=Hobby type=24 value=Bike
+AppViewVerify - customAttr: item=UILabel group=Appearance attr=Brightness type=13 value=8.8
+AppViewVerify - customAttr: item=UILabel group=Life Style attr=Hobby type=24 value=Bike
+AppViewVerify - customAttr: item=UITransitionView group=Appearance attr=Brightness type=13 value=8.8
+AppViewVerify - customAttr: item=UITransitionView group=Life Style attr=Hobby type=24 value=Bike
+AppViewVerify - customAttr: item=UIView group=Appearance attr=Brightness type=13 value=8.8
+AppViewVerify - customAttr: item=UIView group=Life Style attr=Hobby type=24 value=Bike
+AppViewVerify - customAttr: item=UIWindow group=Appearance attr=Brightness type=13 value=8.8
+AppViewVerify - customAttr: item=UIWindow group=Life Style attr=Hobby type=24 value=Bike
+AppViewVerify - customAttr: item=_UIMultiLayer group=Life Style attr=Hobby type=24 value=Bike
+AppViewVerify - customSubview: title=CatConfig0 subtitle= validFrame=0 frame=<invalid>
+AppViewVerify - customSubview: title=CatConfig1 subtitle= validFrame=0 frame=<invalid>
+AppViewVerify - customSubview: title=Fake Cat Subview subtitle=Nice Baby validFrame=1 frame={{100, 100}, {200, 300}}
+AppViewVerify - customSubview: title=Fake Horse Subview subtitle=GoodMorning validFrame=1 frame={{0, 0}, {300, 500}}
+AppViewVerify - customSubview: title=Horse ViewModel subtitle= validFrame=0 frame=<invalid>
+AppViewVerify - customSubview: title=SomeConfig subtitle= validFrame=0 frame=<invalid>
+AppViewVerify - customSubview: title=ViewModel1 subtitle= validFrame=0 frame=<invalid>
+AppViewVerify - customSubview: title=ViewModel2 subtitle= validFrame=0 frame=<invalid>
+AppViewVerify - detail modify: item=BirdView oid=20 customGroups=4 builtinGroups=5 subitems=0
+AppViewVerify - detail modify: item=CustomCatView oid=18 customGroups=3 builtinGroups=5 subitems=0
+AppViewVerify - detail modify: item=CustomHorseLayer oid=22 customGroups=2 builtinGroups=4 subitems=0
+AppViewVerify - detail modify: item=DogLayer oid=17 customGroups=3 builtinGroups=4 subitems=0
+AppViewVerify - detail modify: item=HiddenBadgeView oid=23 customGroups=2 builtinGroups=4 subitems=0
+AppViewVerify - detail modify: item=UIDropShadowView oid=10 customGroups=2 builtinGroups=5 subitems=0
+AppViewVerify - detail modify: item=UILabel oid=15 customGroups=2 builtinGroups=6 subitems=0
+AppViewVerify - detail modify: item=UITransitionView oid=7 customGroups=2 builtinGroups=4 subitems=0
+AppViewVerify - detail modify: item=UIView oid=12 customGroups=2 builtinGroups=5 subitems=0
+AppViewVerify - detail modify: item=UIWindow oid=1 customGroups=2 builtinGroups=5 subitems=0
+AppViewVerify - detail modify: item=_UIMultiLayer oid=9 customGroups=1 builtinGroups=3 subitems=0
+AppViewVerify - hierarchy reload: flatCount=19 customSubviewCount=8 customAttrCount=4 displayingCount=19 selectedTitle=UIView
